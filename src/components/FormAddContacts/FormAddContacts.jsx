@@ -38,6 +38,7 @@ export class FormAddContacts extends Component {
           type="text"
           name="name"
           id="idName"
+          value={this.state.name}
           pattern="^[a-zA-Zа-яА-ЯІіЇїҐґ' \-\u0400-\u04FF]+$"
           title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
           required
@@ -51,6 +52,7 @@ export class FormAddContacts extends Component {
           type="tel"
           name="number"
           id="idNumber"
+          value={this.state.number}
           pattern="\+?[0-9\s\-\(\)]+"
           title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
           required
