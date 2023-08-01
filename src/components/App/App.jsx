@@ -51,7 +51,7 @@ export class App extends Component {
     return contacts.filter(
       contact =>
         contact.name.toLowerCase().includes(normalizedFilter) ||
-        contact.number.toLowerCase().includes(normalizedFilter)
+        contact.number.includes(normalizedFilter)
     );
   };
 
